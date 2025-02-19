@@ -1,0 +1,33 @@
+.\objects\threads.o: ..\SYSTEM\threads\threads.c
+.\objects\threads.o: ..\SYSTEM\threads\threads.h
+.\objects\threads.o: ..\CMSIS\def.h
+.\objects\threads.o: ..\CMSIS\stm32f10x.h
+.\objects\threads.o: ..\CMSIS\core_cm3.h
+.\objects\threads.o: D:\Program Files (x86)\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
+.\objects\threads.o: .\system_stm32f10x.h
+.\objects\threads.o: .\stm32f10x_conf.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_adc.h
+.\objects\threads.o: ..\CMSIS\stm32f10x.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_bkp.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_can.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_cec.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_crc.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_dac.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_dbgmcu.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_dma.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_exti.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_flash.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_fsmc.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_gpio.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_i2c.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_iwdg.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_pwr.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_rcc.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_rtc.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_sdio.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_spi.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_tim.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_usart.h
+.\objects\threads.o: ..\FWLIB\inc\stm32f10x_wwdg.h
+.\objects\threads.o: ..\FWLIB\inc\misc.h
+.\objects\threads.o: D:\Program Files (x86)\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h

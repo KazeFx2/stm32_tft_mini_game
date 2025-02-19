@@ -1,0 +1,195 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Kaze Fx, None, LIC=RC93N-Y83EW-12QLE-5Q0J5-FF884-K9ISW
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.40.0.3
+Toolchain Path:  D:\Program Files (x86)\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      TARMSTM.DLL V1.67.1.0
+Target DLL:      CMSIS_AGDI.dll V1.33.18.0
+Dialog DLL:      TARMSTM.DLL V1.67.1.0
+ 
+<h2>Project:</h2>
+F:\CodeProjects\C_C++\STM32\MDK_ArmProj_re\project\USER\test.uvprojx
+Project File Date:  06/26/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Program Files (x86)\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin'
+Rebuild target 'Target 1'
+compiling stm32f10x_usart.c...
+compiling core_cm3.c...
+compiling stm32f10x_spi.c...
+compiling misc.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_it.c...
+compiling stm32f10x_dac.c...
+compiling main.c...
+main.c(199): warning:  #167-D: argument of type "ADC_TypeDef *" is incompatible with parameter of type "u32"
+  		u16 temp = get_avg(ADC1, ADC_Channel_16, 20);
+main.c(200): warning:  #167-D: argument of type "ADC_TypeDef *" is incompatible with parameter of type "u32"
+  		u16 lsens = get_avg(ADC3, ADC_Channel_6, 1);
+main.c(201): warning:  #167-D: argument of type "ADC_TypeDef *" is incompatible with parameter of type "u32"
+  		u16 volt = get_avg(ADC1, ADC_Channel_1, 1);
+main.c(299): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "int *"
+  		if (key_check(&key_1_flag, &key_1_time, KEY_1, 1))
+main.c: 4 warnings, 0 errors
+compiling system_stm32f10x.c...
+compiling c_lcdfont.c...
+compiling lcd1602.c...
+compiling keys.c...
+KEYS\keys.c(193): warning:  #1-D: last line of file ends without a newline
+  }
+KEYS\keys.c: 1 warning, 0 errors
+compiling oled.c...
+OLED\oled.c(116): warning:  #550-D: variable "flag"  was set but never used
+      u8 i, m, n, flag = 0;
+OLED\oled.c(123): warning:  #177-D: variable "tmp"  was declared but never referenced
+      u8(*tmp)[8] = OLED_GRAM;
+OLED\oled.c: 2 warnings, 0 errors
+compiling c_lcd.c...
+C_LCD\c_lcd.c(594): warning:  #177-D: variable "num1"  was declared but never referenced
+      u32 num = length * width * 2, num1;
+C_LCD\c_lcd.c: 1 warning, 0 errors
+compiling music.c...
+MUSIC\music.c(194): warning:  #167-D: argument of type "u32" is incompatible with parameter of type "ADC_TypeDef *"
+  		ADC_RegularChannelConfig(adc, ch, 1, ADC_SampleTime_239Cycles5);
+MUSIC\music.c(195): warning:  #167-D: argument of type "u32" is incompatible with parameter of type "ADC_TypeDef *"
+  		ADC_SoftwareStartConvCmd(adc, ENABLE);
+MUSIC\music.c(196): warning:  #167-D: argument of type "u32" is incompatible with parameter of type "ADC_TypeDef *"
+  		while (!ADC_GetFlagStatus(adc, ADC_FLAG_EOC))
+MUSIC\music.c(198): warning:  #167-D: argument of type "u32" is incompatible with parameter of type "ADC_TypeDef *"
+  		val += ADC_GetConversionValue(adc);
+MUSIC\music.c(211): warning:  #167-D: argument of type "ADC_TypeDef *" is incompatible with parameter of type "u32"
+  		u32 volt = get_avg(ADC1, ADC_Channel_1, 1);
+MUSIC\music.c(266): warning:  #223-D: function "printf" declared implicitly
+  			printf("[DAC]%05d, [DUTY]%03d, [FREQENCY]%05d\r\n", out_val, duty, frequency, 0);
+MUSIC\music.c(274): warning:  #223-D: function "printf" declared implicitly
+  			printf("[DAC]%05d, [DUTY]%03d, [FREQENCY]%05d\r\n", out_val, duty, frequency, 0);
+MUSIC\music.c(281): warning:  #223-D: function "printf" declared implicitly
+  			printf("[DAC]%05d, [DUTY]%03d, [FREQENCY]%05d\r\n", out_val, duty, frequency, 0);
+MUSIC\music.c(288): warning:  #223-D: function "printf" declared implicitly
+  			printf("[DAC]%05d, [DUTY]%03d, [FREQENCY]%05d\r\n", out_val, duty, frequency, 0);
+MUSIC\music.c(295): warning:  #223-D: function "printf" declared implicitly
+  			printf("[DAC]%05d, [DUTY]%03d, [FREQENCY]%05d\r\n", out_val, duty, frequency, 0);
+MUSIC\music.c(302): warning:  #223-D: function "printf" declared implicitly
+  			printf("[DAC]%05d, [DUTY]%03d, [FREQENCY]%05d\r\n", out_val, duty, frequency, 0);
+MUSIC\music.c(393): warning:  #174-D: expression has no effect
+  			dur > 500 ? dur - 500 : dur;
+MUSIC\music.c: 12 warnings, 0 errors
+compiling pics.c...
+compiling c_lcd_draw.c...
+C_LCD_DRAW\c_lcd_draw.c(151): warning:  #177-D: variable "x0"  was declared but never referenced
+      u16 x0 = x;
+C_LCD_DRAW\c_lcd_draw.c(271): warning:  #513-D: a value of type "const u8 (*)[19][2]" cannot be assigned to an entity of type "uint8_t *"
+          STONE_L_DATA(tar->data.pic_data), safe_dist = 12;
+C_LCD_DRAW\c_lcd_draw.c(271): warning:  #513-D: a value of type "const u8 (*)[19]" cannot be assigned to an entity of type "uint8_t *"
+          STONE_L_DATA(tar->data.pic_data), safe_dist = 12;
+C_LCD_DRAW\c_lcd_draw.c(273): warning:  #513-D: a value of type "const u8 (*)[28][2]" cannot be assigned to an entity of type "uint8_t *"
+          STONE_H_DATA(tar->data.pic_data), safe_dist = 15;
+C_LCD_DRAW\c_lcd_draw.c(273): warning:  #513-D: a value of type "const u8 (*)[28]" cannot be assigned to an entity of type "uint8_t *"
+          STONE_H_DATA(tar->data.pic_data), safe_dist = 15;
+C_LCD_DRAW\c_lcd_draw.c(366): warning:  #513-D: a value of type "const u8 (*)[60][60]" cannot be assigned to an entity of type "uint8_t *"
+      test_layer_pic.data.pic_data.mask = &run_pic_masks[run_count];
+C_LCD_DRAW\c_lcd_draw.c(367): warning:  #513-D: a value of type "const u8 (*)[60][60][2]" cannot be assigned to an entity of type "uint8_t *"
+      test_layer_pic.data.pic_data.pic = &run_pics[run_count];
+C_LCD_DRAW\c_lcd_draw.c(454): warning:  #513-D: a value of type "const u8 (*)[60][60]" cannot be assigned to an entity of type "uint8_t *"
+          test_layer_pic.data.pic_data.mask = &run_pic_masks[run_count];
+C_LCD_DRAW\c_lcd_draw.c(455): warning:  #513-D: a value of type "const u8 (*)[60][60][2]" cannot be assigned to an entity of type "uint8_t *"
+          test_layer_pic.data.pic_data.pic = &run_pics[run_count];
+C_LCD_DRAW\c_lcd_draw.c: 9 warnings, 0 errors
+compiling usart.c...
+compiling spi.c...
+compiling gpio.c...
+assembling startup_stm32f10x_hd.s...
+compiling sys.c...
+compiling dma.c...
+compiling threads.c...
+..\SYSTEM\threads\threads.c(95): warning:  #260-D: explicit type is missing ("int" assumed)
+  __asm STR_SP(uint32_t offest, uint32_t value)
+..\SYSTEM\threads\threads.c(148): warning:  #120-D: return value type does not match the function type
+  	return (uint32_t)ptr & 0xfffffffc;
+..\SYSTEM\threads\threads.c(153): warning:  #144-D: a value of type "u_ptr" cannot be used to initialize an entity of type "uint32_t"
+  	uint32_t ps[4] = {p0, p0};
+..\SYSTEM\threads\threads.c(153): warning:  #144-D: a value of type "u_ptr" cannot be used to initialize an entity of type "uint32_t"
+  	uint32_t ps[4] = {p0, p0};
+..\SYSTEM\threads\threads.c(249): warning:  #144-D: a value of type "uint32_t" cannot be used to initialize an entity of type "u_ptr"
+  		u_ptr sp = MRS_MSP();
+..\SYSTEM\threads\threads.c(250): warning:  #42-D: operand types are incompatible ("u_ptr" and "unsigned int")
+  		if (((u_ptr *)sp)[3] == 0xfffffff9) {
+..\SYSTEM\threads\threads.c(250): warning:  #152-D: conversion of nonzero integer to pointer
+  		if (((u_ptr *)sp)[3] == 0xfffffff9) {
+..\SYSTEM\threads\threads.c(254): warning:  #167-D: argument of type "u_ptr *" is incompatible with parameter of type "uint32_t"
+  			save_Context_r4_2_r11(pcb_array[current_task].context.registers);
+..\SYSTEM\threads\threads.c(258): warning:  #223-D: function "MSR_MSP" declared implicitly
+  			MSR_MSP(pcb_array[current_task].context.sp);
+..\SYSTEM\threads\threads.c(259): warning:  #167-D: argument of type "u_ptr *" is incompatible with parameter of type "uint32_t"
+  			rec_Context_r4_2_r11(pcb_array[current_task].context.registers);
+..\SYSTEM\threads\threads.c(282): warning:  #144-D: a value of type "uint32_t" cannot be used to initialize an entity of type "u_ptr"
+    u_ptr sp = MRS_MSP(), r2 = MOV_R2(), r3 = MOV_R3();
+..\SYSTEM\threads\threads.c(282): warning:  #144-D: a value of type "uint32_t" cannot be used to initialize an entity of type "u_ptr"
+    u_ptr sp = MRS_MSP(), r2 = MOV_R2(), r3 = MOV_R3();
+..\SYSTEM\threads\threads.c(282): warning:  #144-D: a value of type "uint32_t" cannot be used to initialize an entity of type "u_ptr"
+    u_ptr sp = MRS_MSP(), r2 = MOV_R2(), r3 = MOV_R3();
+..\SYSTEM\threads\threads.c(302): warning:  #1254-D: arithmetic on pointer to void or function type
+  		memcpy(target->context.sp + STACK_DRAWBACK + 4 * 3, sp + 4 * 10, (stack_args - 1) * 4);
+..\SYSTEM\threads\threads.c(302): warning:  #1254-D: arithmetic on pointer to void or function type
+  		memcpy(target->context.sp + STACK_DRAWBACK + 4 * 3, sp + 4 * 10, (stack_args - 1) * 4);
+..\SYSTEM\threads\threads.c(302): warning:  #1254-D: arithmetic on pointer to void or function type
+  		memcpy(target->context.sp + STACK_DRAWBACK + 4 * 3, sp + 4 * 10, (stack_args - 1) * 4);
+..\SYSTEM\threads\threads.c(304): warning:  #513-D: a value of type "unsigned int" cannot be assigned to an entity of type "u_ptr"
+    stack_start[3] = 0xfffffff9;
+..\SYSTEM\threads\threads.c(304): warning:  #152-D: conversion of nonzero integer to pointer
+    stack_start[3] = 0xfffffff9;
+..\SYSTEM\threads\threads.c(308): warning:  #513-D: a value of type "uint32_t" cannot be assigned to an entity of type "u_ptr"
+    stack_start[6] = n_args;
+..\SYSTEM\threads\threads.c(312): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "u_ptr"
+    stack_start[11] = 0x01000000;
+..\SYSTEM\threads\threads.c(312): warning:  #152-D: conversion of nonzero integer to pointer
+    stack_start[11] = 0x01000000;
+..\SYSTEM\threads\threads.c(314): warning:  #120-D: return value type does not match the function type
+  	return target;
+..\SYSTEM\threads\threads.c(320): warning:  #144-D: a value of type "ThreadHandlerType" cannot be used to initialize an entity of type "PCB_t *"
+    PCB_t *pcb = thread;
+..\SYSTEM\threads\threads.c(328): warning:  #144-D: a value of type "ThreadHandlerType" cannot be used to initialize an entity of type "PCB_t *"
+  	PCB_t *target = thread;
+..\SYSTEM\threads\threads.c(338): warning:  #144-D: a value of type "ThreadHandlerType" cannot be used to initialize an entity of type "PCB_t *"
+  	PCB_t *target = thread;
+..\SYSTEM\threads\threads.c(403): warning:  #144-D: a value of type "ThreadHandlerType" cannot be used to initialize an entity of type "PCB_t *"
+  	PCB_t *target = thread;
+..\SYSTEM\threads\threads.c: 26 warnings, 0 errors
+linking...
+Program Size: Code=26634 RO-data=201090 RW-data=5640 ZI-data=44576  
+FromELF: creating hex file...
+".\Objects\test.axf" - 0 Error(s), 55 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  E:/Keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>
